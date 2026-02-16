@@ -3,11 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>My Website - About</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
     </head>
     <body>
         <h1>Kaija Hall</h1>
-        <p>My name is Kaija Hall and I am a 3rd year Computer Science student. 
-            I am currently studying at the University of the West Indies. 
-            I am also taking the course, INFO3180, Dynamic Web Development 2.</p>
+        <p>My name is Kaija Hall and I am a 3rd year Computer Science student. <br>
+            I am currently studying at the University of the West Indies. <br>
+            I am also taking the course, INFO3180, Dynamic Web Development 2.<br>
+            I also like roses &#128522;.</p>
+            <img src="{{ url_for('static', filename='roses.jpg') }}" alt="rose image">
     </body>
 </html> 
